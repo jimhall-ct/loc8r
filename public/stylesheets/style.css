@@ -1,10 +1,42 @@
 body {
-  padding: 50px;
+  padding-top: 60px;
   font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
   color: #ffffff;
   background: #108a93;
 }
 
+nav {
+  background: #991f1f;
+}
+
 a {
   color: #00B7FF;
 }
+
+.card {
+  background: #10a6af;
+}
+
+h4 a { color: white;}
+
+.fa {
+  font-size: 1rem;
+  color: #ccc;
+}
+
+.fa-check {
+  color: #999;
+}
+
+.lead {
+  font-size: .9em;
+  line-height: 1.5;
+}
+
+.review {padding-bottom: 5px;}
+.panel-body.review-container {padding-top: 0;}
+.review-header {margin-bottom: 10px; background-color: #10929b; padding: 8px;
+}
+.reviewAuthor {margin: 0 5px;}
+.reviewTimestamp {color: #ccc;}
+
