@@ -3,25 +3,26 @@ extends layout
 block content
   .row.banner
     .col-12
-      h1 Loc8r
-        small &nbsp;Find places to work with wifi near you!
+      h1 Review Starcups
   .row
     .col-12.col-md-8
-      .card
-        .card-block
-          h4
-            a(href="/location") Starcups
-            small &nbsp;
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star
-              i.fa.fa-star-o
-              i.fa.fa-star-o
-            span.badge.badge-pill.badge-danger.float-right 100m
-          p.address 125 High Street, Reading, RB6 1PS
-          p.facilities
-            span.badge.badge-warning.mr-1 Hot Drinks
-            span.badge.badge-warning.mr-1 Food
-            span.badge.badge-warning.mr-1 Premium WiFi
+      form(action='/location', method='get', role='form')
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for='name') Name:
+          .col-12.col-sm-10
+            input#name.form-control(name='name')
+        .form-group.row
+          label.col-10.col-sm-2.col-form-label(for='rating') Rating:
+          .col-12.col-sm-2
+            select#rating.form-control.input-sm(name='rating')
+              option 5
+              option 4
+              option 3
+              option 2
+              option 1
+        .form-group.row
+          label.col-sm-2.col-form-label(for='review') Review:
+          .col-sm-10
+            textarea#review.form-control(name='review', rows='5')
+        button.btn.btn-primary.float-right Add My Review
     .col-12.col-md-4
-      p.lead Looking for wifi and a seat? Loc8r helps you find places to work when out and about. Perhaps with coffee, cake or a pint? Let Loc8r help you find the place you're looking for.
